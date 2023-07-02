@@ -1,0 +1,81 @@
+.statusProgress-wrapper {
+    padding: 0 50px 50px 50px;
+}
+
+.statusProgress {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.statusProgress-progress-bar-bottom {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    height: 5px;
+    background-color: #e0e0e0;
+    z-index: 1000;
+}
+
+.statusProgress-item {
+    position: relative;
+    z-index: 2000;
+}
+
+.statusProgress-item > span {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.statusProgress-item > span.incomplete {
+    background-color: #fff;
+    position: relative;
+}
+
+.statusProgress-item > span.incomplete::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #e0e0e0;
+    z-index: 500;
+}
+
+.statusProgress-item > span > svg {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* milestone content */
+
+.statusProgress-item > div {
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    width: max-content;
+    transform: translate(-50%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statusProgress-item > div > span.milestone {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.statusProgress-item > div > span.milestone-date {
+    font-size: 12px;
+}

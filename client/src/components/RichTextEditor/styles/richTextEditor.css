@@ -1,0 +1,26 @@
+.rdw-editor-wrapper {
+    /* border: 2px solid #333; */
+    padding: 15px;
+}
+
+
+.rdw-editor-main {
+    height: 400px;
+    border: 1px solid #F1F1F1;
+    margin-top: 3px;
+}
+
+.save-description-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.save-description-btn button {
+    background-color: #0275d8;
+    color: #fff;
+}
+
+.save-description-btn button:hover {
+    color: #fff;
+}

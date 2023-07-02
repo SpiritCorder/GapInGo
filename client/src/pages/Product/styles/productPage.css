@@ -1,0 +1,126 @@
+.productPage-details-container {
+    text-transform: none!important;
+}
+
+.productPage-details-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.productPage-details-subtitle {
+    margin-top: 20px;
+    font-size: 15px;
+    color: tomato!important;
+}
+
+.productPage-details-condition > span {
+    margin-left: 20px;
+}
+
+.productPage-details-variation-label {
+    justify-self: flex-end;
+}
+
+.productPage-details-variation-select {
+    margin-left: 20px;
+    padding: 6px 20px;
+    width: 50%;
+}
+
+.productPage-details-quantity {
+    margin-left: 20px;
+}
+
+.productPage-details-quantity > button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.productPage-details-quantity > p {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-buy-it-now, .btn-add-to-cart {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.btn-buy-it-now {
+    background-color: rgb(46, 46, 175);
+}
+
+/* tabs styles */
+.nav-tabs {
+    z-index: 1000!important;
+    border-bottom: 2px solid rgb(206, 206, 206)!important;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: calc(-2 * var(--bs-nav-tabs-border-width));
+}
+
+.nav-tabs .nav-link.active {
+    border-left: 2px solid rgb(206, 206, 206)!important;
+    border-right: 2px solid rgb(206, 206, 206)!important;
+    border-top: 2px solid rgb(206, 206, 206)!important;
+    border-bottom: none!important;
+}
+
+.tab-content {
+    border: none!important;
+    border-left: 2px solid rgb(206, 206, 206)!important;
+    border-right: 2px solid rgb(206, 206, 206)!important;
+    border-bottom: 2px solid rgb(206, 206, 206)!important;
+    transform: translateY(15px)!important;
+}
+
+
+/* detailed description styles */
+.productPage-detailed-desc-specifications-title {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+
+.productPage-detailed-desc-title {
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0;
+    text-decoration: underline;
+}
+
+.productPage-detailed-desc {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productPage-detailed-desc > h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.productPage-detailed-desc > img {
+    width: 600px!important;
+    height: 700px!important;
+    object-fit: cover!important;
+}
+
+.table-bordered>:not(caption)>*>* {
+    border-width: none!important;
+}

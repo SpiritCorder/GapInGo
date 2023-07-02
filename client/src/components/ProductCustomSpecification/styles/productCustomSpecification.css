@@ -1,0 +1,140 @@
+.product-custom-specification-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 30000;
+    pointer-events: none;
+}
+
+.product-custom-specification-content {
+    max-width: 80%;
+    min-height: calc(100vh - 100px);
+    max-height: calc(100vh - 100px);
+    background-color: #fff;
+    z-index: 30000;
+    padding: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    /* overflow-y: scroll; */
+    position: relative;
+    pointer-events: all;
+}
+
+.product-custom-specification-close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: red;
+}
+
+.product-custom-specification-scroll {
+    overflow-y: scroll;
+    height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-custom-specification-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* .product-custom-specification-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+} */
+   
+  /* Handle */
+.product-custom-specification-scroll::-webkit-scrollbar-thumb {
+    background: rgb(224, 223, 223); 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+.product-custom-specification-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgb(189, 187, 187); 
+}
+
+.custom-specification-input-container {
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.custom-specification-input-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.custom-specification-input-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.custom-specification-input-name label, .custom-specification-input-value label {
+   font-size: 12px;
+   color: rgb(189, 187, 187);
+   margin-bottom: 5px;
+}
+
+.custom-specification-input-name input, .custom-specification-input-value input {
+   padding: 6px 15px;
+}
+
+.custom-specification-input-container span {
+    width: 10px;
+    height: 2px;
+    background: #333;
+    transform: translateY(10px);
+}
+
+.custom-specification-input-container button {
+    align-self: flex-end;
+    /* display: block; */
+    background-color: #0275d8;
+    color: #fff;
+    padding: 6px 15px;
+    font-size: 12px;
+    border: none;
+    border-radius: 50px;
+}
+
+.custom-specification-input-container button:focus {
+    outline: none;
+}
+
+.custom-specification-delete-btn {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-specification-delete-btn:focus {
+    outline: none;
+}
+
+.custom-specification-delete-btn:hover svg {
+    color: red!important;
+}

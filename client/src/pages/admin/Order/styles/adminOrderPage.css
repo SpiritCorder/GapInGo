@@ -1,0 +1,36 @@
+.adminOrderPage-handleStatus {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.adminOrderPage-handleStatus > button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+}
+
+.adminOrderPage-handleStatus > div {
+    position: absolute;
+    top: 105%;
+    left: 15px;
+    z-index: 1000;
+    width: max-content;
+    background-color: #fff;
+}
+
+.adminOrderPage-handleStatus > div > button {
+    text-align: start;
+    font-size: 14px;
+    z-index: 1001;
+    background-color: #fff;
+}
+
+.adminOrderPage-handleStatus > div > button:hover {
+    background-color: #333;
+    color: #fff;
+}

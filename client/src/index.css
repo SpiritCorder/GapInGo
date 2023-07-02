@@ -1,0 +1,73 @@
+main {
+    min-height: 80vh;
+}
+
+.product_price {
+    padding: 10px 0px;
+}
+
+.loader {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+select {
+    width: 80px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+select > option {
+    text-align: center;
+}
+
+.cartImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-description-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+b {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#place_order_btn {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#place_order_btn.success {
+    background-color: #66EF66;
+    font-size: 25px;
+}
+
+/* parcel tracking */
+
+.parcels-widget {
+    min-width: 312px;
+    min-height: 210px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+}
+
+/* Phone Number Input Global Styles  */
+
+.PhoneInput > input {
+    padding: 5px 10px;
+}
+

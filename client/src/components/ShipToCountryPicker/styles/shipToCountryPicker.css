@@ -1,0 +1,109 @@
+.shipToCountryPicker {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: max-content;
+    /* overflow: hidden; */
+    background-color: #fff;
+    z-index: 100000;
+    padding: 20px 30px;
+}
+
+.shipToCountryPicker-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.shipToCountryPicker-select-container {
+    position: relative;
+}
+
+.shipToCountryPicker-current-selected-country {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+
+.shipToCountryPicker-current-selected-country > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.shipToCountryPicker-current-selected-country > div > img {
+    width: 35px;
+    height: 24px;
+}
+
+.shipToCountryPicker-current-selected-country > div > p {
+    margin: 0;
+}
+
+.shipToCountryPicker-current-selected-country > button {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background-color: #333;
+    justify-self: flex-end;
+}
+
+.shipToCountryPicker-current-selected-country > button > svg {
+    font-size: 20px;
+    color: #fff;
+}
+
+.shipToCountryPicker-select-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    /* bottom: calc(-40 * 28)px; */
+    width: 100%;
+    max-height: 320px;
+    overflow-y: scroll;
+}
+
+.shipToCountryPicker-select-list > button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 15px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.shipToCountryPicker-select-list > button:last-child {
+    border-bottom: none;
+}
+
+.shipToCountryPicker-select-list > button:hover {
+    background-color: lightgray;
+}
+
+.shipToCountryPicker-select-list > button > img {
+    width: 35px;
+    height: 24px;
+}
+
+.shipToCountryPicker-controls {
+    /* position: absolute; */
+    /* bottom: 20px; */
+    /* left: 30px; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.shipToCountryPicker-save, .shipToCountryPicker-cancel {
+    padding: 0 20px;
+    border-radius: 30px;
+}

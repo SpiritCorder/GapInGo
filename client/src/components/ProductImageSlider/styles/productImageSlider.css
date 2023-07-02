@@ -1,0 +1,137 @@
+.product-image-slider-container {
+    width: 100%;
+}
+
+.product-image-slider-top {
+    width: 100%;
+    min-height: 400px;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.images-container {
+    width: 100%;
+    min-height: 400px;
+    max-height: 400px;
+    display: flex;
+    transition: transform .4s ease-in;
+}
+
+.images-container img {
+    width: 100%;
+    height: inherit;
+    object-fit: contain;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 100;
+    transition: opacity .4s ease;
+}
+
+.product-image-slider-top:hover .prev-btn, .product-image-slider-top:hover .next-btn {
+    opacity: 1;
+}
+
+.prev-btn:focus, .next-btn:focus {
+    outline: none;
+}
+
+.prev-btn {
+    left: 0;
+    margin-left: 20px;
+}
+
+.next-btn {
+    right: 0;
+    margin-right: 20px;
+}
+
+.prev-btn svg, .next-btn svg {
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* product-image-slider-bottom */
+
+.product-image-slider-bottom {
+    width: 100%;
+    /* margin-top: 15px; */
+    overflow: hidden;
+    padding: 15px 6px;
+    position: relative;
+}
+
+.thumbnail-prev , .thumbnail-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail-prev:focus , .thumbnail-next:focus {
+    outline: none;
+}
+
+.thumbnail-prev {
+    left: 0;
+    margin-left: 5px;
+}
+
+.thumbnail-next {
+    right: 0;
+    margin-right: 5px;
+}
+
+.thumbnail-container {
+    width: max-content;
+    display: flex;
+    gap: 15px;
+    transition: transform .3s ease-out;
+}
+
+.thumbnail {
+    width: 125px;
+    max-height: 80px;
+    min-height: 80px;
+    margin-right: 20px; 
+    border: none;
+    outline-offset: 3px;
+}
+
+.thumbnail:not(:last-child) {
+    margin-right: 0;
+}
+
+/* .thumbnail:focus {
+    outline: none;
+} */
+
+.thumbnail > img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+}

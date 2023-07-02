@@ -1,0 +1,32 @@
+.userList-table {
+	border-spacing: 0 15px;
+	border-collapse: separate;
+    width: 100%;
+}
+.userList-table thead tr th,
+.userList-table thead tr td,
+.userList-table tbody tr th,
+.userList-table tbody tr td {
+	vertical-align: middle;
+	border: none;
+}
+.userList-table thead tr th:nth-last-child(1),
+.userList-table thead tr td:nth-last-child(1),
+.userList-table tbody tr th:nth-last-child(1),
+.userList-table tbody tr td:nth-last-child(1) {
+	text-align: center;
+}
+.userList-table tbody tr {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+.userList-table tbody tr td {
+	background: #fff;
+    padding: 20px 10px;
+}
+.userList-table tbody tr td:nth-child(1) {
+	border-radius: 5px 0 0 5px;
+}
+.userList-table tbody tr td:nth-last-child(1) {
+	border-radius: 0 5px 5px 0;
+}
